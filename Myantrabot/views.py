@@ -19,16 +19,16 @@ class BOT(View):
         self.checkout_url = 'https://www.myntra.com/checkout/cart'
 
         chrom_options = Options()
-
+        chrom_options.binary_location=os.environ.get("GOOGLE_CHROME_BIN")
         chrom_options.page_load_strategy = 'normal'
-
+    
         # chrom_options.add_argument("--headless")
         # chrom_options.add_argument("--no-sandbox")
         # chrom_options.add_argument("--disable-dev-shm-usage")
         # chrom_options.add_argument("window-size=1920x1480")
 
 
-        self.driver = webdriver.Chrome(executable_path='/Users/apple/Downloads/BestBuyBot/Myantrabot/chromedriver', options=chrom_options)
+        self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrom_options)
         self.main()
 
 
