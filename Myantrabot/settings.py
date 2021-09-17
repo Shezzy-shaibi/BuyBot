@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-&*_tb3l_sqvi7ctx-(q2xr9nj+lc$d(ju4z#rmdug-3ja3^d_7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", "myantrabot.herokuapp.com"]
 
 
 # Application definition
@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'Myantrabot.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR,'db.sqlite3'),
+#     }
+# }
 import dj_database_url
 
 db_from_env = dj_database_url.config()
