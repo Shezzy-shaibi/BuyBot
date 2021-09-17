@@ -1,0 +1,41 @@
+
+============   Please Read
+
+1:    Copy the url you want to purchase and paste in config.ini file as a value of "item_url"
+
+2:    Fill all your information according to the same pattern
+
+3:    If you want to pay as credit card just change "credit_card = False"  to  "credit_card = True"
+otherwise if you want to pay with cash on delivery just leave as it is.
+
+4:  Size:   If item has some XS \  S   \   L  \ XL    size the specify the size in "config.ini"  file  as    "size = XS or S or L or XL"
+
+5:  Quantity:   please specify your quantity as  "quantity = 2" in config.ini  file
+
+
+Note:   Please dont change the pattern of config.ini file just fill your  real information.
+
+
+open terminal and reach the "BestBuyBot" directory
+
+
+===============  RUNNING ===============
+1: install compatible chromdriver and put in this directory (as I am using Mac so I install chromdriver Mac compatible if
+you are in window you can install for window   using below link
+
+link:         https://chromedriver.storage.googleapis.com/index.html?path=93.0.4577.15/
+
+
+2: copy full path of chromdriver and paste that path as a value of "chromedriver_path" in configini file
+
+===== Run the below commands
+
+3: pip3 install pipenv
+
+4: pipenv shell
+
+5: pip3 install -r requirements.txt
+
+6: python bot.py
+
+ ======================================================

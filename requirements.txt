@@ -1,0 +1,7 @@
+bs4
+lxml
+selenium
+Django
+gunicorn
+django_heroku
+dj_database_url
