@@ -22,9 +22,7 @@ class BOT(View):
         chrom_options.binary_location=os.environ.get("GOOGLE_CHROME_BIN")
         chrom_options.page_load_strategy = 'normal'
     
-        chrom_options.add_argument("--headless")
-        chrom_options.add_argument("--no-sandbox")
-        chrom_options.add_argument("--disable-dev-shm-usage")
+         
         # chrom_options.add_argument("window-size=1920x1480")
 
 
