@@ -36,7 +36,7 @@ class BOT(View):
         # waits for items to load if it hasnt loaded already
         self.driver.implicitly_wait(10)
         # get product page
-        self.driver.get(self.config.get('https://www.myntra.com/tshirts/vero-moda/vero-moda-women-pink--white-typography-printed-extended-sleeves-t-shirt/14376468/buy'))
+        self.driver.get('https://www.myntra.com/tshirts/vero-moda/vero-moda-women-pink--white-typography-printed-extended-sleeves-t-shirt/14376468/buy')
         try:
             if self.config.get('SIZE', 'size') == "XS":
                 random_wait_time = random.randrange(5.0, 10.0)
